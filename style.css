@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url(Design\ sans\ titre\ \(1\).jpg);
+    background-size: 100%  ;
+    max-width: 2400px;
+    background-repeat: no-repeat;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header a{
+    color: white;
+    
+}
+
+header a:hover{
+    color: rgb(70, 70, 184);
+}
+
+
+header .navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+header .navbar .navlinks ul{
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+
+header .navbar .navlinks ul li{
+    margin: 10px;
+}
+
+header .navbar .navlinks .sign{
+    border: white solid 1px;
+    padding: 6px;
+}
+
+header .navbar .navlinks .sign:hover{
+    background-color: white;
+    color: rgba(13, 34, 138, 0.934);
+
+}
+
+header .navbar .logo{
+    font-size: 1.5em;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    color: white;
+    font-weight: 600;
+}
+    
+.zoo{
+    width: 20%;
+}
+
+.division{
+    margin: 70px 0 0 10px;
+    animation-name: text;
+    animation-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+
+}
+
+.division p{
+    font-size: 15px;
+}
+
+.division2{
+    text-align: center;
+}
+
+@keyframes text {
+    0%{transform: translateX(-300px);}
+    100%{transform: translateX(0);}
+
+}
+
+.astuces{
+    gap: 50px;
+    margin: 180px 0 0 0 ;
+    text-align: center;
+}
+
+.astuces h2{
+    color: black;
+}
+
+.none{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.astuces .lor{
+    background-color: rgb(70, 70, 184);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+
+.chevr{
+    width:5%;
+    
+}
+.container{
+    display: block;
+    margin: 100px 0 30px 0 ;
+}
+
+.container h2{
+    border: 1px solid black;
+}
+
+header .navbar i{
+    display: none;
+}
+
+
+.ensemble{
+    border: 1px black solid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(70, 70, 184);
+    width: 100%;
+    padding: 20px;
+
+}
+.ensemble .box{
+    margin: 10px;
+}
+.ensemble textarea , input{
+    width: 60%;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    outline-color:  rgb(70, 70, 184);
+    border-radius: 5px;
+    
+}
+.ensemble .box1 input{
+    border: black solid 1px;
+    
+}
+.ensemble .box1 input:hover{
+    background-color:black ;
+    scale: 1.1;
+    transition: all ease .2s;
+    color: white;
+    width: 40%;
+    
+}
+
+
+.logs{
+    display: grid;
+    width: 100%;
+    
+}
+.logs{
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px;
+}
+
+.logs img{
+    width: 30%;
+}
+.rien{
+    background-color: white;
+}
+
+.logs2{
+    background-color: rgb(70, 70, 184);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.noth{
+    display: none;
+}
+
+footer{
+    background-color:rgb(70, 70, 184) ;
+    padding: 7px;
+}
+
+
+.noth{
+    display: none;
+}
+@media screen and (max-width : 900px) {
+    body{
+        background-image: url(Design\ sans\ titre\ \(1\).jpg);
+        background-size: 100%  ;
+        background-repeat: no-repeat;
+    }
+    .division{
+        margin: 70px 0 0 10px;
+        animation-name: text;
+        animation-duration: 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 15vh;
+    
+    }
+    .division h1{
+        font-size: 1em;
+    }
+
+    .navlinks{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        margin-left: -100%;
+        transition: all ease .3s;
+        position: fixed;
+        
+    }
+    
+    .navlinks ul{
+        display: flex;
+        flex-direction: column ;
+        
+    }
+
+    .navlinks ul li a{
+        color: black;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    .menu{
+        display: block;
+        width: 10%;
+        position: relative;
+        top: 13px;
+        right: 10px;
+    }
+
+    .navlinks.Open{
+        margin-left: 0;
+    }
+    
+    .container{
+        display: block;
+        
+    }
+
+    .lor{
+        margin: 20px;
+    }
+
+    header .navbar i{
+        display: block;
+        position: relative;
+        top: 18px;
+        right: 20px;
+        cursor: pointer;
+
+    }
+
+    .logs{
+        display: block;
+    }
+    
+    
+    .none{
+        display: block;
+    }
+
+    .noth{
+        display: block;
+        margin: 0 0 0 150px;
+    }
+
+
+    #rest{
+        display: none;
+    }
+
+}
